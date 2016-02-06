@@ -5,7 +5,7 @@
 
   angular.module('sitaApp')
     .constant('CONFIG', {
-      appName: 'SITA - AIPORT API',
+      appName: 'SITA - AIRPORT API',
       version: '1.0',
       //apiURL: '/api/',
       apiURL: 'https://airport.api.aero/',
