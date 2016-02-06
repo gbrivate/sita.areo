@@ -1,0 +1,10 @@
+{
+  "name": "Sita",
+  "app_id": "bc48f79d",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://airport.api.aero/"
+    }
+  ]
+}

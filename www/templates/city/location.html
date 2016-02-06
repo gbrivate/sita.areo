@@ -1,0 +1,18 @@
+<ion-view class="result-page">
+  <ion-header-bar class="bar-positive" align-title="center">
+    <button class="button ion-ios-arrow-back icon-left button-clear button-back"
+            ng-click="cityCtrl.goTo('city');"></button>
+    <h1 class="title" style="font-size: 15px">
+      {{cityCtrl.title | uppercase}}
+    </h1>
+  </ion-header-bar>
+
+  <ion-content>
+
+    <div id="map"  data-tap-disabled="true"
+     style="width: 100%;height: 100%">
+
+    </div>
+  </ion-content>
+</ion-view>
+

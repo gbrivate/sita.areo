@@ -1,0 +1,49 @@
+<ion-view class="result-page">
+  <ion-header-bar class="bar-positive" align-title="center">
+    <button class="button ion-ios-arrow-back icon-left button-clear button-back"
+            ng-click="cityCtrl.goTo('country');"
+            ng-show="!cityCtrl.isLocation"></button>
+    <button class="button ion-ios-arrow-back icon-left button-clear button-back"
+            ng-click="cityCtrl.goTo('airport');"
+            ng-show="cityCtrl.isLocation"></button>
+    <h1 class="title" style="font-size: 15px">
+      {{cityCtrl.title | uppercase}}
+    </h1>
+  </ion-header-bar>
+
+  <ion-content padding="false">
+    <div style="width: 100%;height: 50px" align="center">
+      <input type="text" ng-model="city" placeholder="Search" style="width: 100%;height: 50px">
+    </div>
+
+    <ion-list>
+      <ion-item collection-repeat="city in cityCtrl.cities | searchCity:city" class="margin-zero"
+                ng-click="cityCtrl.findLocation(city)">
+        <div class="row" class="margin-zero">
+          <div class="col col-20 margin-zero label">City:</div>
+          <div class="col col-80 margin-zero label">{{city.city}}</div>
+        </div>
+        <div class="row" class=" margin-zero">
+          <div class="col col-20 margin-zero label">Airport:</div>
+          <div class="col col-80 margin-zero label">{{city.name}} - {{city.code}}</div>
+        </div>
+      </ion-item>
+    </ion-list>
+
+
+    <!--
+        ashKey: "object:924"
+        city: "Mazar-i-sharif"
+        code: "MZR"
+        country: "Afghanistan"
+        gate: null
+        lat: 36.706914
+        lng: 67.209678
+        name: "Mazar I Sharif"
+        terminal: null
+        timezone: "Asia/Kabul"
+        __proto__: Object-->
+
+  </ion-content>
+</ion-view>
+

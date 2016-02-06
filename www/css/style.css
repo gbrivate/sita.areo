@@ -1,0 +1,123 @@
+/* SITA API - APP BY GABRIEL SANTOS */
+
+.result-page {
+  /*   background: url(../img/background.jpg) no-repeat center center fixed;*/
+  background-color: #f9f9f9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.div-footer {
+  position: fixed;
+  bottom: 25%;
+  left: 20%;
+  width: 60%;
+  text-align: center;
+}
+
+.div-middle {
+  position: fixed;
+  top: 30%;
+  left: 15%;
+  height: 100%;
+  width: 70%;
+  text-align: center;
+}
+
+.div-footer-copy-right {
+  position: fixed;
+  bottom: 0;
+  left: 15%;
+  height: 10%;
+  width: 70%;
+}
+
+.div-footer-check {
+  position: fixed;
+  bottom: 10%;
+  left: 15%;
+  height: 0%;
+  width: 70%;
+  align-content: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.margin-zero {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.label-home {
+  top: 29%;
+  position: fixed;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.button-home {
+  /* background-color: #0271ba;*/
+  width: 80%;
+  border-radius: 30px;
+  color: #e4e3cc;
+  font-family: "Helvetica Neu", "Roboto", "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-color: #7e7d71;
+}
+
+.button-airport {
+  background-color: #0271ba;
+  color: #e4e3cc;
+  font-family: "Helvetica Neu", "Roboto", "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-color: #7e7d71;
+}
+
+.button-back {
+  width: 10%;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) {
+  margin-top: 20px;
+}
+
+.label {
+  font-family: 'Helvetica Neu', "Arimo", "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: #7e7d71;
+  font-size: 12px;
+}
+
+.welcome {
+  color: #7e7d71;
+}
+
+.sita {
+  color: #0271ba;
+}
+
+.scroll {
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}

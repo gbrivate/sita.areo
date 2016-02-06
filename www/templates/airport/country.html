@@ -1,0 +1,24 @@
+<ion-view class="result-page">
+  <ion-header-bar class="bar-positive" align-title="center">
+    <button class="button ion-ios-arrow-back icon-left button-clear button-back"
+            ng-click="airportCtrl.goTo('airport');"></button>
+    <h1 class="title" style="font-size: 15px">
+      {{airportCtrl.title | uppercase}}
+    </h1>
+  </ion-header-bar>
+
+  <ion-content padding="false">
+    <div style="width: 100%;height: 50px" align="center">
+      <input type="text" ng-model="country" placeholder="Search" style="width: 100%;height: 50px">
+    </div>
+    <ion-list>
+      <ion-item collection-repeat="country in airportCtrl.countries | search:country "
+                ng-click="airportCtrl.loadCities(country)">
+        <div class="row" class="margin-zero">
+          <div class="col col-25 margin-zero label">{{country.name}}</div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
