@@ -13,7 +13,8 @@
 * Into the project root folder
 * ionic serve
 
-## In case you want to add platforms iOS or Android, please, take a look at http://ionicframework.com/docs/cli/run.html
+## Add platforms iOs and Android.
+* In case you want to add platforms iOS or Android, please, take a look at http://ionicframework.com/docs/cli/run.html
 
 
 That's it, for now.
